@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Data Visualization Project: City-Parish Employees Salaries</h1>
+    </header>
+
+    <main>
+        <section id="intro">
+            <h2>Objective</h2>
+            <p>
+                Utilizing data from City-Parish Employees and Python libraries such as Pandas, Matplotlib, and Seaborn, 
+                I conducted an in-depth analysis to uncover trends, including salary distributions, hiring patterns, and other insights. 
+            </p>
+            <p>
+                Data from: <a href="https://catalog.data.gov/dataset/city-parish-employees" target="_blank">
+                    https://catalog.data.gov/dataset/city-parish-employees</a>
+            </p>
+        </section>
+
+        <section id="questions">
+            <h2>Prompts (Charts Below)</h2>
+            <p>
+                What is the distribution of employee salaries?
+                <a class="jump-button" href="#salary-distribution">Jump to Chart</a>
+            </p>
+            <p>
+                Does years of service play a role in salary?
+                <a class="jump-button" href="#years-of-service">Jump to Chart</a>
+            </p>
+            <p>
+                Does pay location code affect salary?
+                <a class="jump-button" href="#pay-location-code">Jump to Chart</a>
+            </p>
+            <p>
+                How has salary changed over time?
+                <a class="jump-button" href="#salary-change-over-time">Jump to Chart</a>
+            </p>
+            <p>
+                Are there locations with a higher percentile of salaries?
+                <a class="jump-button" href="#high-percentile-salaries">Jump to Chart</a>
+            </p>
+            <p>
+                Which locations have the least scheduled hours?
+                <a class="jump-button" href="#least-hours-locations">Jump to Chart</a>
+            </p>
+            <p>
+                Which locations have the most scheduled hours?
+                <a class="jump-button" href="#most-hours-locations">Jump to Chart</a>
+            </p>
+            <p>
+                Does scheduled hours play a role in salary?
+                <a class="jump-button" href="#scheduled-hours">Jump to Chart</a>
+            </p>
+            <p>
+                What is the correlation between salary and other numerical columns?
+                <a class="jump-button" href="#correlation-heatmap">Jump to Chart</a>
+            </p>
+            <p>
+                What are the hiring trends over the years?
+                <a class="jump-button" href="#hiring-trends">Jump to Chart</a>
+            </p>
+        </section>
+
+        <section id="visualizations">
+            <h2>Visualizations</h2>
+            <div class="visualization" id="salary-distribution">
+                <h3>Salary Distribution</h3>
+                <img src="salary_distribution.png" alt="Salary Distribution">
+            </div>
+
+            <div class="visualization" id="years-of-service">
+                <h3>Years in Service and Salary</h3>
+                <img src="years_of_service_vs_salary.png" alt="Years of Service vs Salary">
+            </div>
+
+            <div class="visualization" id="pay-location-code">
+                <h3>Pay Location and Salary</h3>
+                <img src="pay_location_code_vs_salary.png" alt="Pay Location Code vs Salary">
+            </div>
+
+            <div class="visualization" id="salary-change-over-time">
+                <h3>Salary over Time</h3>
+                <img src="salary_change_over_time.png" alt="Salary Change Over Time">
+            </div>
+
+            <div class="visualization" id="high-percentile-salaries">
+                <h3>Locations with Highest Salaries</h3>
+                <img src="high_percentile_salaries.png" alt="High Percentile Salaries Locations">
+            </div>
+
+            <div class="visualization" id="least-hours-locations">
+                <h3>Locations with Least Scheduled Hours</h3>
+                <img src="least_hours_locations.png" alt="Least Scheduled Hours Locations">
+            </div>
+
+            <div class="visualization" id="most-hours-locations">
+                <h3>Locations with Most Scheduled Hours</h3>
+                <img src="most_hours_locations.png" alt="Most Scheduled Hours Locations">
+            </div>
+
+            <div class="visualization" id="scheduled-hours">
+                <h3>Scheduled Hours and Salary</h3>
+                <img src="scheduled_hours_vs_salary.png" alt="Scheduled Hours vs Salary">
+            </div>
+
+            <div class="visualization" id="correlation-heatmap">
+                <h3>Correlation Heatmap</h3>
+                <img src="correlation_heatmap.png" alt="Correlation Heatmap">
+            </div>
+
+            <div class="visualization" id="hiring-trends">
+                <h3>Hiring Trends</h3>
+                <img src="hiring_trends.png" alt="Hiring Trends Over the Years">
+            </div>
+        </section>
+
+        <section id="summary">
+            <h2>Summary: What does this tell us?</h2>
+            <p>
+                Through this analysis of City-Parish salaries, we've uncovered a few trends in the data. 
+                The average salary in this city is roughly $50,000 which is $13,795 less than the national average in the United States as of 2024.
+                Though this is the case, the information is skewed because of the significant number of residents who have an income of 0.
+                We've also uncovered that in that salary, hours don't have a strong impact on salary. 
+                Which indicates there are other factors that contribute to salary. 
+                One of which is years of service, there is a high reflection of the more years put in, the higher the salary. 
+                Another one of which is pay location, there is a lot of variation between locations.
+                Other than salary correlations, we've also uncovered hiring trends. 
+                The data highlights that as time went on there is a decline in people being hired which could indicate different departmental initiatives or different payroll systems.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p> © 2024 Musfiqur Nabil | Data Visualization Project: City-Parish Employees Salaries</p>
+    </footer>
+</body>
+</html>
